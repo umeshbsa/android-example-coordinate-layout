@@ -32,7 +32,7 @@ public class ToolbarShowHideActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        ToolbarShowHideAdapter adapter = new ToolbarShowHideAdapter(MyData.getData());
+        ToolbarShowHideAdapter adapter = new ToolbarShowHideAdapter(this, MyData.getData());
         recyclerView.setAdapter(adapter);
 
     }

@@ -1,23 +1,29 @@
 package com.app.coordinate.adapter;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.app.coordinate.R;
 import com.app.coordinate.data.MyData;
+import com.app.coordinate.ui.MainActivity;
+import com.app.coordinate.ui.ParallaxEffectToolbarActivity;
+import com.app.coordinate.ui.ToolbarShowHideActivity;
 
 import java.util.List;
 
 public class ToolbarShowHideAdapter extends RecyclerView.Adapter<ToolbarShowHideAdapter.MyViewHolder> {
 
     private List<MyData> dataSet;
+    private ToolbarShowHideActivity activity;
 
-
-    public ToolbarShowHideAdapter(List<MyData> data) {
+    public ToolbarShowHideAdapter(ToolbarShowHideActivity activity, List<MyData> data) {
         this.dataSet = data;
+        this.activity = activity;
     }
 
 
@@ -48,8 +54,9 @@ public class ToolbarShowHideAdapter extends RecyclerView.Adapter<ToolbarShowHide
         holder.setData(data);
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
 
+        private final LinearLayout linearRoot;
         TextView tvName;
         TextView tvAddress;
 
@@ -57,12 +64,22 @@ public class ToolbarShowHideAdapter extends RecyclerView.Adapter<ToolbarShowHide
             super(itemView);
             this.tvName = (TextView) itemView.findViewById(R.id.tv_name);
             this.tvAddress = (TextView) itemView.findViewById(R.id.tv_address);
+            this.linearRoot = (LinearLayout) itemView.findViewById(R.id.linear_root);
         }
 
         public void setData(MyData data) {
             tvName.setText(data.getName());
             tvAddress.setText(data.getAddress());
+
+            linearRoot.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(activity, ParallaxEffectToolbarActivity.class);
+                    activity.startActivity(i);
+                }
+            });
         }
+
     }
 
 }
