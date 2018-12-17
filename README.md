@@ -1,7 +1,10 @@
 ## android-example-coordinate-layout
 
-**Show/Hide Toolbar from Recycleview scrolling**<br/>
-    <img src="https://github.com/umeshbsa/android-example-coordinate-layout/blob/master/co0.gif"/><br/>
+**Show/Hide Toolbar from Recycleview scrolling**<br/><br/>
+    <img src="https://github.com/umeshbsa/android-example-coordinate-layout/blob/master/co0.gif"/>
+     
+**Parallax Effect with Toolbar**<br/><br/>
+    <img src="https://github.com/umeshbsa/android-example-coordinate-layout/blob/master/co1.gif"/>
      
 #### Licence
 
