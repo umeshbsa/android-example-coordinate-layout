@@ -9,4 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Toolbar Show/Hide" />
+
+
+    <Button
+        android:id="@+id/btn_toolbar_parallax_effect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toolbar Parallax Effect" />
 </LinearLayout>

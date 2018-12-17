@@ -22,5 +22,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+        findViewById(R.id.btn_toolbar_parallax_effect).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ParallaxEffectToolbarActivity.class);
+                startActivity(i);
+            }
+        });
     }
 }
