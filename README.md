@@ -3,6 +3,9 @@
 **Show/Hide Toolbar from Recycleview scrolling**<br/>
     <img src="https://github.com/umeshbsa/android-example-coordinate-layout/blob/master/co0.gif"/><br/>
      
+**Parallax Effect with Toolbar**<br/>
+    <img src="https://github.com/umeshbsa/android-example-coordinate-layout/blob/master/co1.gif"/><br/>
+     
 #### Licence
 
     Copyright 2018 Umesh Kumar
