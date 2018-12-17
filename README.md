@@ -1,6 +1,6 @@
 ## android-example-coordinate-layout
 
-**Show/Hide Toolbar from Recycleview scrolling** 
+**Show/Hide Toolbar from Recycleview scrolling**<br/>
     <img src="https://github.com/umeshbsa/android-example-coordinate-layout/blob/master/co0.gif"/><br/>
      
 #### Licence
